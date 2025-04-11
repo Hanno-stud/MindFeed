@@ -1,0 +1,92 @@
+/* Container for the action buttons */
+.news-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  
+  /* Read More button */
+  .read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #6cc32e;
+    color: #363636;
+    transform: scale(1.05);
+  }
+  
+  /* Save Article icon */
+  .save-article-icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+  }
+  
+  .save-article-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
+  .save-article-icon.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* Text-to-Speech icon */
+  .text-to-speech-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .text-to-speech-icon:hover {
+    transform: scale(1.2);
+    color: #6cc32e;
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

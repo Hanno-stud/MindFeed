@@ -1,0 +1,135 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container with a gradient background */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4b0082, #ffffff);
+    animation: backgroundFade 2s ease-in-out;
+  }
+  
+  /* Form wrapper styles */
+  .form-wrapper {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+  }
+  
+  /* Title styles */
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4b0082;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4b0082;
+    padding-bottom: 10px;
+    animation: slideDown 1s ease;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input group styles */
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+    animation: slideUp 1s ease;
+  }
+  .input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #4b0082;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  .input-group input:focus {
+    outline: none;
+    border-color: #4b0082;
+  }
+  
+  /* Button group styling */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+  }
+  .btn-signup {
+    background: #4b0082;
+    color: #ffffff;
+  }
+  .btn-signup:hover {
+    background: #3a0066;
+    transform: scale(1.05);
+  }
+  .btn-login {
+    background: #ccc;
+    color: #333;
+  }
+  .btn-login:hover {
+    background: #bbb;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes backgroundFade {
+    from {
+      filter: brightness(0.8);
+    }
+    to {
+      filter: brightness(1);
+    }
+  }
+  

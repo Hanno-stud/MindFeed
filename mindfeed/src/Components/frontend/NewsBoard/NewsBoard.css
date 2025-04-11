@@ -1,0 +1,60 @@
+/* Fetch Mode Selector */
+/* Fetch Mode Selector */
+.fetch-mode-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px; /* Add spacing between buttons */
+  }
+  
+  .fetch-mode-selector .btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px; /* Rounded buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .fetch-mode-selector .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .fetch-mode-selector .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .fetch-mode-selector .btn:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .fetch-mode-selector .btn:active {
+    transform: translateY(1px); /* Button press effect */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on press */
+  }
+    
+  /* RSS Filter Dropdown */
+  .rss-filter-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .rss-filter-dropdown label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .rss-filter-dropdown select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }

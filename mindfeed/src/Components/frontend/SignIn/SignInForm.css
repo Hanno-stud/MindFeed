@@ -1,0 +1,110 @@
+/* SignInForm.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+  }
+  
+  /* Main container styling to mimic Instagram's centered layout */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Card styling similar to Instagram's login card */
+  .login-card {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  /* Logo styling */
+  .login-logo h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 3rem;
+    color: #262626;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-input-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .login-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #8e8e8e;
+  }
+  
+  .login-input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    background-color: #fafafa;
+    transition: border-color 0.2s;
+  }
+  
+  .login-input-group input:focus {
+    outline: none;
+    border-color: #a8a8a8;
+  }
+  
+  /* Login button styling */
+  .login-btn {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  .login-btn:hover {
+    background-color: #3182ce;
+    transform: scale(1.02);
+  }
+  
+  /* Footer with Register link */
+  .login-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #8e8e8e;
+  }
+  
+  .register-link {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  .register-link:hover {
+    color: #3182ce;
+  }
+  
