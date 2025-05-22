@@ -3,8 +3,13 @@ import subprocess
 import os
 import sys
 import time
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
+# Set the maximum number of requests to be processed concurrently
+#app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB limit
+
 
 @app.route('/text-to-speech', methods=['POST'])
 def text_to_speech():
