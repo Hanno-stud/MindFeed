@@ -1,5 +1,5 @@
-# News-Mag
-News-Mag is a web application developed using React JS and Bootstrap, designed to provide users with the latest news articles based on different categories. This project utilizes the News API to fetch news data and displays it in a user-friendly interface.
+# MindFeed
+MindFeed is a web application developed using React JS and Bootstrap, designed to provide users with the latest news articles based on different categories. This project utilizes the News API to fetch news data and displays it in a user-friendly interface.
 
 ## Features
 - Category Selection: Users can choose from various news categories such as business, entertainment, health, science, sports, technology, etc.
@@ -8,7 +8,7 @@ News-Mag is a web application developed using React JS and Bootstrap, designed t
 - Read More: Provides a link to read the full article on the news source's website.
 
 ## Installation
-- Clone the repository: git clone https://github.com/NadeeTharuka/news-mag.git
+- Clone the repository: git clone [https://github.com/Hanno-stud/MindFeed.git](https://github.com/Hanno-stud/MindFeed.git)
 
 ## Usage
 Obtain an API key from News API and set it in your environment variables or directly in the code.
